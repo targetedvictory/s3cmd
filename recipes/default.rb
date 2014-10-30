@@ -3,8 +3,9 @@
 # Recipe:: default
 #
 
-package "git-core"
-package "python-setuptools"
+package 'git-core'
+package 'python-setuptools'
+package 'python-dateutil'
 
 directory "#{node[:s3cmd][:install_prefix_root]}/share/s3cmd" do
   action :create
