@@ -7,4 +7,5 @@ default[:s3cmd][:aws_secret_access_key] = ""
 
 default[:s3cmd][:version] = "v1.5.0-rc1"
 default[:s3cmd][:user] = "root"
+default[:s3cmd][:app_name_extension] = ""
 default[:s3cmd][:install_prefix_root] = "/usr/local"
