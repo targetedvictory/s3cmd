@@ -36,7 +36,7 @@ node[:s3cmd][:users].each do |user|
   home = user.to_s == :root.to_s ? "/root" : "/home/#{user}"
   
   template "s3cfg#{app_name}" do
-      path "#{home}/.s3cfg#{app_name}"
+      path "#{home}/.s3cfg#{node[:s3cmd][:app_name_extension]}"
       source "s3cfg.erb"
       owner "#{user}"
       mode 0600
